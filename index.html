@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/c3e2b7bb51.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chicago Dice Game</title>
+  </head>
+  <body>
+    <section class="game-start-controls">
+      <button class="btn btn-new"><i class="fas fa-plus"></i> New Game</button>
+      <h1 class="heading-round">Round <span class="round"></span></h1>
+    </section>
+    <section class="game-main-container">
+      <div class="card active" id="player-0">
+        <h2 class="player" id="player-name-0">Player 1</h2>
+        <div class="score" id="score-0">0</div>
+      </div>
+      <section class="dice-container">
+        <img src="img/dice-1.png" alt="Dice" class="dice dice-1" />
+        <img src="img/dice-1.png" alt="Dice" class="dice dice-2" />
+      </section>
+      <div class="card" id="player-1">
+        <h2 class="player" id="player-name-1">Player 2</h2>
+        <div class="score" id="score-1">0</div>
+      </div>
+    </section>
+    <section class="game-play-controls">
+      <button class="btn btn-roll">Roll <i class="fas fa-dice"></i></button>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

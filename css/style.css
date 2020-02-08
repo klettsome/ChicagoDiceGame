@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #ef233c;
+  --cal-color: #d80032;
+  --bg-color: #edf2f4;
+  --light-gray-color: #8d99ae;
+  --light-gray-color-2: #eef3f5;
+  --dark-gray-color: #2b2d42;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+body {
+  display: grid;
+  grid-template-rows: min-content 40vh min-content;
+  grid-template-columns: repeat(12, minmax(30px, 1fr));
+
+  font-family: 'Noto Sans', sans-serif;
+
+  background-color: var(--bg-color);
+  color: var(--dark-gray-color);
+  margin: 0;
+}
+
+.game-start-controls {
+  grid-column: 4/10;
+  grid-row: 1/2;
+  text-align: center;
+
+  padding-top: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+
+@media (max-width: 37.5em) {
+  .game-start-controls {
+    margin-bottom: 1rem;
+  }
+}
+
+.game-main-container {
+  grid-column: 3/11;
+  grid-row: 2/3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+}
+
+.game-play-controls {
+  grid-column: 4/10;
+  grid-row: 3/4;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-round {
+  font-size: 3.2rem;
+}
+
+@media (max-width: 37.5em) {
+  .heading-round {
+    font-size: 2.5rem;
+  }
+}
+
+.active {
+  color: var(--cal-color);
+}
+
+.player {
+  font-size: 1.88rem;
+  font-style: italic;
+}
+
+@media (max-width: 37.5em) {
+  .player {
+    font-size: 1.2rem;
+  }
+}
+
+.score {
+  font-size: 6.25rem;
+}
+
+@media (max-width: 37.5em) {
+  .score {
+    font-size: 4rem;
+  }
+}
+
+.dice-container {
+  padding: 0 2.5rem;
+}
+
+@media (max-width: 37.5em) {
+  .dice-container {
+    padding: 0 2rem;
+  }
+}
+
+.dice {
+  width: 13rem;
+}
+
+@media (max-width: 37.5em) {
+  .dice {
+    width: 4rem;
+  }
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--dark-gray-color);
+  font-family: 'Noto Sans', sans-serif;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+}
+
+.btn:focus {
+  outline: none;
+}
